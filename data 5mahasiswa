@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int i, n, data[5]; 
+	// i adalah nilai untuk perulangan for
+	// n variabel untuk banyak data
+	// variabel data untuk memasukan data tinggi badan mahasiswa
+	float jumlah,ratarata;
+	// jumlah  untuk menghitung seluruh tinggi badan mahasiswa
+	// ratarata untuk variabel menghitung rata rata
+	
+	n=5;
+	// kenapa 5? karena kita hanya mencari tinggi badan 5 mahasiswa
+
+		cout << "Pandu Purwanto_120400090_Teknik Telekomunikasi\n";
+		cout << "==============================================\n";
+		cout << endl;
+		
+	for (i=1; i<=5; i++)
+		{
+			cout << "Data tinggi badan ke- " << i << " = ";
+			cin >> data[i];
+			jumlah += data[i];
+			ratarata = jumlah/n;
+		}
+	cout << endl; // syntak untuk membuat garis baru
+	cout << "\n"; // syntak untuk membuat garis baru
+	cout << "Jumlah Seluruh Tinggi Badan : " << jumlah << endl;
+	cout << "Rata rata tinggi badan 5 Mahasiswa :" << ratarata << endl;
+}
